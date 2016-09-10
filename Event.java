@@ -5,9 +5,8 @@ package com.example.likev.sbu;
  */
 import java.util.*;
 public class Event {
-    private String name, description, host;
+    private String name, description, host, date;
     private int start, end;
-    private Date date;
 
     public Event(){
         name = null;
@@ -19,7 +18,7 @@ public class Event {
     }
 
     public Event(String name,String host,String description,
-                 Date date,int start, int end){
+                 String date,int start, int end){
         this.name = name;
         this.host = host;
         this.description = description;
@@ -52,11 +51,11 @@ public class Event {
         this.host = host;
     }
 
-    public Date getDate(){
+    public String getDate(){
         return date;
     }
 
-    public void setDate(Date date){
+    public void setDate(String date){
         this.date = date;
     }
 
