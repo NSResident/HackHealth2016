@@ -1,12 +1,12 @@
-package com.example.likev.sbu;
-
+package com.example.eniola.hackhealth;
 /**
  * Created by likev on 9/10/2016.
  */
 import java.util.*;
 public class Event {
-    private String name, description, host, date;
+    private String name, description, host;
     private int start, end;
+    private String date;
 
     public Event(){
         name = null;
